@@ -24,7 +24,7 @@ export default function Hero() {
             <a
               href="https://smb-lgr-sgs.netlify.app"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer" title="Abrir en Mozilla Firefox"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white text-black px-6 py-2.5 text-sm font-semibold hover:bg-neutral-200 transition"
             >
               Línea LGR
@@ -34,13 +34,16 @@ export default function Hero() {
             <a
               href="https://smb-lbs-sgs.netlify.app"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer" title="Abrir en Mozilla Firefox"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 text-white px-6 py-2.5 text-sm font-semibold hover:bg-white hover:text-black transition"
             >
               Línea LBS
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>
+          <p className="mt-3 text-xs text-neutral-400 max-w-xl mx-auto lg:mx-0">
+            Nota: los enlaces están pensados para ser utilizados en Mozilla Firefox.
+          </p>
         </motion.div>
 
         {/* Imagen o mockup */}

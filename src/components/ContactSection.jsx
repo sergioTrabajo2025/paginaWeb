@@ -91,14 +91,9 @@ export default function ContactSection({ primary = [], collaborators = [] }) {
 
         {/* Header */}
         <header className="text-center max-w-2xl mx-auto">
-          <p className="text-xs uppercase tracking-widest text-white/60">Contacto</p>
           <h2 className="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
-            CONTACTO
+            INTEGRANTES
           </h2>
-          <p className="mt-3 text-neutral-300 text-sm">
-            Coordinemos demos, soporte o nuevas integraciones para tus líneas y sistemas.
-          </p>
-
           
         </header>
 
