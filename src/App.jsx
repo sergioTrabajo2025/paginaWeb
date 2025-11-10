@@ -1,8 +1,12 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ShowcaseCarousel from "./components/ShowcaseCarousel";
+import InstallationsStrip from "./components/InstallationsStrip"; 
+
 import Footer from "./components/Footer";
 import { SLIDES } from "./data/slides";
+import { INSTALACIONES } from "./data/instalaciones";  // ✅ IMPORTA ESTO TAMBIÉN
+
 
 function BackgroundDecor() {
   return (
@@ -21,6 +25,7 @@ export default function App() {
       <Navbar />
       <ShowcaseCarousel slides={SLIDES} />
            <Hero /> 
+      <InstallationsStrip items={INSTALACIONES} />
 
       <Footer />
     </div>

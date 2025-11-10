@@ -11,7 +11,7 @@ import { Menu, X, ChevronLeft, ChevronRight, Github, Linkedin, Mail, ArrowUpRigh
  */
 
 const TEAM = {
-  name: "RailTech Dev Team",
+  name: "Grupo de desarrollo",
   tagline: "Sistemas de monitoreo ferroviario, hardware embebido y software en tiempo real",
   logo: "/favicon.ico", // Cambiá por tu logo en /public
   cta: {
