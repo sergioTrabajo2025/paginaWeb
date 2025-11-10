@@ -1,10 +1,15 @@
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Lock } from "lucide-react";
 
 export default function Hero() {
   return (
     <section id="SMB" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-center lg:text-left scroll-mt-16">
-      <div className="grid lg:grid-cols-2 gap-10 items-center">
+      <div className="relative overflow-hidden rounded-3xl ring-1 ring-white/10 bg-gradient-to-br from-indigo-500/10 via-cyan-500/10 to-fuchsia-500/10 p-6 sm:p-10">
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+          <div className="absolute -top-32 -left-20 h-64 w-64 rounded-full bg-indigo-500/25 blur-3xl" />
+          <div className="absolute -bottom-24 -right-16 h-72 w-72 rounded-full bg-fuchsia-500/25 blur-3xl" />
+        </div>
+        <div className="grid lg:grid-cols-2 gap-10 items-center">
         {/* Texto principal */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,7 +25,7 @@ export default function Hero() {
             independientes y visualización web en tiempo real.
           </p>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-4 justify-center lg:justify-start">
             <a
               href="https://smb-lgr-sgs.netlify.app"
               target="_blank"
@@ -30,6 +35,34 @@ export default function Hero() {
               Línea LGR
               <ExternalLink className="w-4 h-4" />
             </a>
+            {/* Próximamente: botones desactivados */}
+            <button
+              type="button"
+              disabled
+              title="Próximamente"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 text-white/50 px-6 py-2.5 text-sm font-semibold cursor-not-allowed"
+            >
+              Linea LS
+              <Lock className="w-4 h-4" />
+            </button>
+            <button
+              type="button"
+              disabled
+              title="Próximamente"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 text-white/50 px-6 py-2.5 text-sm font-semibold cursor-not-allowed"
+            >
+              LSM
+              <Lock className="w-4 h-4" />
+            </button>
+            <button
+              type="button"
+              disabled
+              title="Próximamente"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 text-white/50 px-6 py-2.5 text-sm font-semibold cursor-not-allowed"
+            >
+              LM
+              <Lock className="w-4 h-4" />
+            </button>
 
             <a
               href="https://smb-lbs-sgs.netlify.app"
@@ -60,6 +93,7 @@ export default function Hero() {
             />
           </div>
         </motion.div>
+        </div>
       </div>
     </section>
   );
