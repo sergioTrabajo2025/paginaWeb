@@ -4,6 +4,8 @@ import ShowcaseCarousel from "./components/ShowcaseCarousel";
 import InstallationsStrip from "./components/InstallationsStrip"; 
 
 import Footer from "./components/Footer";
+import ContactSection from "./components/ContactSection";
+import { TEAM_PRIMARY, TEAM_COLLABS } from "./data/team";
 import { SLIDES } from "./data/slides";
 import { INSTALACIONES } from "./data/instalaciones";  // ✅ IMPORTA ESTO TAMBIÉN
 
@@ -27,6 +29,7 @@ export default function App() {
            <Hero /> 
       <InstallationsStrip items={INSTALACIONES} />
 
+      <ContactSection primary={TEAM_PRIMARY} collaborators={TEAM_COLLABS} />
       <Footer />
     </div>
   );
