@@ -42,7 +42,7 @@ export default function Hero() {
               title="Próximamente"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 text-white/50 px-6 py-2.5 text-sm font-semibold cursor-not-allowed"
             >
-              Linea LS
+              Línea LS
               <Lock className="w-4 h-4" />
             </button>
             <button
@@ -73,9 +73,10 @@ export default function Hero() {
               Línea LBS
               <ExternalLink className="w-4 h-4" />
             </a>
+      
           </div>
           <p className="mt-3 text-xs text-neutral-400 max-w-xl mx-auto lg:mx-0">
-            Nota: los enlaces están pensados para ser utilizados en Mozilla Firefox.
+            <a href="/gallery/instalacion/instalacion.pdf" target="_blank" rel="noopener noreferrer" className="underline text-neutral-300 hover:text-white" title="Abrir PDF de instalación">Instructivo para la visualización de los links en Google Chrome</a>
           </p>
         </motion.div>
 

@@ -75,7 +75,7 @@ export default function ShowcaseCarousel({ slides = [] }) {
   return (
     <section id="portfolio" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12">
       <div className="relative rounded-3xl overflow-hidden ring-1 ring-white/10 bg-white/5">
-        <div className="relative aspect-[21/9]">
+        <div className="relative aspect-[21/7.65]">
           <AnimatePresence mode="popLayout" initial={false}>
             <motion.img
               key={current.id ?? index}
