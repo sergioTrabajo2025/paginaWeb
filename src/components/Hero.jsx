@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { ExternalLink, Lock } from "lucide-react";
 
 export default function Hero() {
@@ -21,8 +21,8 @@ export default function Hero() {
           </h1>
 
           <p className="mt-4 text-neutral-300 text-lg max-w-xl mx-auto lg:mx-0">
-            Plataforma de monitoreo y control para líneas ferroviarias, con módulos
-            independientes y visualización web en tiempo real.
+            Plataforma de monitoreo y control para l&iacute;neas ferroviarias, con m&oacute;dulos
+            independientes y visualizaci&oacute;n web en tiempo real.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-4 justify-center lg:justify-start">
@@ -32,23 +32,23 @@ export default function Hero() {
               rel="noopener noreferrer" title="Abrir en Mozilla Firefox"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white text-black px-6 py-2.5 text-sm font-semibold hover:bg-neutral-200 transition"
             >
-              Línea LGR
+              L&iacute;nea LGR
               <ExternalLink className="w-4 h-4" />
             </a>
-            {/* Próximamente: botones desactivados */}
+            {/* Pr&oacute;ximamente: botones desactivados */}
             <button
               type="button"
               disabled
-              title="Próximamente"
+              title="Pr&oacute;ximamente"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 text-white/50 px-6 py-2.5 text-sm font-semibold cursor-not-allowed"
             >
-              Línea LS
+              L&iacute;nea LS
               <Lock className="w-4 h-4" />
             </button>
             <button
               type="button"
               disabled
-              title="Próximamente"
+              title="Pr&oacute;ximamente"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 text-white/50 px-6 py-2.5 text-sm font-semibold cursor-not-allowed"
             >
               LSM
@@ -57,7 +57,7 @@ export default function Hero() {
             <button
               type="button"
               disabled
-              title="Próximamente"
+              title="Pr&oacute;ximamente"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 text-white/50 px-6 py-2.5 text-sm font-semibold cursor-not-allowed"
             >
               LM
@@ -70,13 +70,13 @@ export default function Hero() {
               rel="noopener noreferrer" title="Abrir en Mozilla Firefox"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 text-white px-6 py-2.5 text-sm font-semibold hover:bg-white hover:text-black transition"
             >
-              Línea LBS
+              L&iacute;nea LBS
               <ExternalLink className="w-4 h-4" />
             </a>
       
           </div>
           <p className="mt-3 text-xs text-neutral-400 max-w-xl mx-auto lg:mx-0">
-            <a href="/gallery/instalacion/instalacion.pdf" target="_blank" rel="noopener noreferrer" className="underline text-neutral-300 hover:text-white" title="Abrir PDF de instalación">Instructivo para la visualización de los links en Google Chrome</a>
+            <a href="/instructivo.html" target="_blank" rel="noopener noreferrer" className="underline text-neutral-300 hover:text-white" title="Abrir PDF de instalaci&oacute;n">Instructivo para la visualizaci&oacute;n de los links en Google Chrome</a>
           </p>
         </motion.div>
 
@@ -99,3 +99,9 @@ export default function Hero() {
     </section>
   );
 }
+
+
+
+
+
+
