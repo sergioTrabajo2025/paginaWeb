@@ -106,14 +106,22 @@ export default function ContactSection({ primary = [], collaborators = [] }) {
             <div className="h-px flex-1 bg-gradient-to-r from-white/20 to-transparent" />
           </div>
           {(() => {
-            const firstRow = primary.slice(0, 2);
-            const secondRow = primary.slice(2, 5);
+            const firstRowCount = primary.length === 4 ? 1 : Math.min(2, primary.length);
+            const firstRow = primary.slice(0, firstRowCount);
+            const secondRow = primary.slice(firstRowCount);
+            const getCenteredCols = (count) => {
+              if (count === 1) return ["sm:col-start-3"];
+              if (count === 2) return ["sm:col-start-2", "sm:col-start-4"];
+              return ["sm:col-start-1", "sm:col-start-3", "sm:col-start-5"];
+            };
+            const topStarts = getCenteredCols(firstRow.length);
+            const bottomStarts = getCenteredCols(secondRow.length);
             return (
               <div className="grid gap-6">
-                {/* Top row: 2 cards centered over gaps (cols 2 and 4 of a 5-col grid) */}
+                {/* Top row centered across 5-col grid */}
                 <div className="grid grid-cols-2 sm:grid-cols-5 gap-6 place-items-center">
                   {firstRow.map((p, i) => {
-                    const colStart = i === 0 ? "sm:col-start-2" : "sm:col-start-4";
+                    const colStart = topStarts[i] ?? "";
                     return (
                       <div key={`p-top-${i}`} className={colStart}>
                         <PersonCardModern person={p} />
@@ -121,11 +129,10 @@ export default function ContactSection({ primary = [], collaborators = [] }) {
                     );
                   })}
                 </div>
-                {/* Bottom row: 3 cards at cols 1, 3, 5 */}
+                {/* Bottom row centered across 5-col grid */}
                 <div className="grid grid-cols-2 sm:grid-cols-5 gap-6 place-items-center">
                   {secondRow.map((p, i) => {
-                    const starts = ["sm:col-start-1", "sm:col-start-3", "sm:col-start-5"];
-                    const colStart = starts[i] ?? "";
+                    const colStart = bottomStarts[i] ?? "";
                     return (
                       <div key={`p-bottom-${i}`} className={colStart}>
                         <PersonCardModern person={p} />

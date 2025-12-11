@@ -26,8 +26,9 @@ export default function App() {
       <BackgroundDecor />
       <Navbar />
       <ShowcaseCarousel slides={SLIDES} />
-           <Hero /> 
+      <Hero ids={["SMB"]} />
       <InstallationsStrip items={INSTALACIONES} />
+      <Hero ids={["TMP"]} />
 
       <ContactSection primary={TEAM_PRIMARY} collaborators={TEAM_COLLABS} />
       <Footer />

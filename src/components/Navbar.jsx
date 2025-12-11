@@ -19,29 +19,14 @@ export default function Navbar() {
 
         <nav className="hidden md:flex items-center gap-6 text-sm text-neutral-300">
           {BRAND.nav.map((n) => {
-            const isSMB = n.href === "#SMB";
-            const isTMP = n.href === "#TMP";
-
-            if (isTMP) {
-              return (
-                <span
-                  key={n.label}
-                  aria-disabled
-                  title="Próximamente"
-                  className="text-neutral-500 cursor-not-allowed"
-                >
-                  {n.label}
-                </span>
-              );
-            }
-
+            const isHeroLink = n.href === "#SMB" || n.href === "#TMP";
             return (
               <a
                 key={n.label}
                 href={n.href}
                 className={
                   "hover:text-white" +
-                  (isSMB ? " transition-transform duration-200 hover:scale-110" : "")
+                  (isHeroLink ? " transition-transform duration-200 hover:scale-110" : "")
                 }
               >
                 {n.label}
@@ -62,7 +47,7 @@ export default function Navbar() {
         <button
           onClick={() => setOpen((v) => !v)}
           className="md:hidden grid place-items-center h-9 w-9 rounded-lg bg-white/5 ring-1 ring-white/10 text-white"
-          aria-label="Abrir menú"
+          aria-label="Abrir menu"
           aria-expanded={open}
         >
           {open ? <X size={18} /> : <Menu size={18} />}
@@ -73,29 +58,14 @@ export default function Navbar() {
         <div className="md:hidden px-4 pb-4">
           <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 p-4 grid gap-2 text-neutral-200">
             {BRAND.nav.map((n) => {
-              const isSMB = n.href === "#SMB";
-              const isTMP = n.href === "#TMP";
-
-              if (isTMP) {
-                return (
-                  <span
-                    key={n.label}
-                    aria-disabled
-                    title="Próximamente"
-                    className="px-3 py-2 rounded-lg text-neutral-500 cursor-not-allowed"
-                  >
-                    {n.label}
-                  </span>
-                );
-              }
-
+              const isHeroLink = n.href === "#SMB" || n.href === "#TMP";
               return (
                 <a
                   key={n.label}
                   href={n.href}
                   className={
                     "px-3 py-2 rounded-lg hover:bg-white/5" +
-                    (isSMB ? " transition-transform duration-200 hover:scale-105" : "")
+                    (isHeroLink ? " transition-transform duration-200 hover:scale-105" : "")
                   }
                 >
                   {n.label}
