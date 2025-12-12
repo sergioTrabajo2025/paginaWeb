@@ -40,8 +40,8 @@ const HERO_SECTIONS = [
       { label: "Visualizacion", href: "https://prueba-tmp.netlify.app/", icon: ExternalLink, variant: "solid", title: "Abrir en navegador" },
     ],
     helper: {
-      label: "Documentacion en preparacion",
-      disabled: true,
+      label: "Instructivo para la visualizacion de los links en Google Chrome",
+      href: "/instructivo.html",
     },
   },
 ];

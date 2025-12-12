@@ -1,14 +1,12 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ShowcaseCarousel from "./components/ShowcaseCarousel";
-import InstallationsStrip from "./components/InstallationsStrip"; 
-
+import InstallationsStrip from "./components/InstallationsStrip";
 import Footer from "./components/Footer";
 import ContactSection from "./components/ContactSection";
 import { TEAM_PRIMARY, TEAM_COLLABS } from "./data/team";
 import { SLIDES } from "./data/slides";
-import { INSTALACIONES } from "./data/instalaciones";  // ✅ IMPORTA ESTO TAMBIÉN
-
+import { INSTALACIONES, INSTALACIONES_TMP } from "./data/instalaciones";
 
 function BackgroundDecor() {
   return (
@@ -29,7 +27,7 @@ export default function App() {
       <Hero ids={["SMB"]} />
       <InstallationsStrip items={INSTALACIONES} />
       <Hero ids={["TMP"]} />
-
+      <InstallationsStrip title="Instalaciones del Sistema TMP" items={INSTALACIONES_TMP} />
       <ContactSection primary={TEAM_PRIMARY} collaborators={TEAM_COLLABS} />
       <Footer />
     </div>

@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 
-export default function InstallationsStrip({ items = [] }) {
+export default function InstallationsStrip({
+  title = "Instalaciones del Sistema de Monitoreo de Barrera (SMB)",
+  items = [],
+}) {
   const [lightboxIndex, setLightboxIndex] = useState(null);
   const isOpen = lightboxIndex !== null;
 
@@ -30,7 +33,7 @@ export default function InstallationsStrip({ items = [] }) {
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
       <h2 className="text-xl sm:text-2xl font-semibold text-white mb-6">
-        Instalaciones del Sistema de Monitoreo de Barrera (SMB)
+        {title}
       </h2>
 
       {/* === MODO MOBILE: carril horizontal con scroll === */}
