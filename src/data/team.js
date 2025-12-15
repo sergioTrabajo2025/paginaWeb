@@ -1,8 +1,8 @@
 export const TEAM_PRIMARY = [
   { name: "Ing Emiliano Prato", role: "Subgerente", photo: "/team/integrante1.jpg" },
   { name: "Ing Lescano Sergio", role: "Personal Critico", photo: "/team/integrante3.jpg" },
-  { name: "97% casi Ing. Marcos Longhini", role: "Personal Critico", photo: "/team/integrante4.jpg" },
-  { name: "97% casi Ing. Punzi Gabriel", role: "Personal Critico", photo: "/team/integrante5.jpg" },
+  { name: "Marcos Longhini", role: "Personal Critico", photo: "/team/integrante4.jpg" },
+  { name: "Punzi Gabriel", role: "Personal Critico", photo: "/team/integrante5.jpg" },
 ];
 
 export const TEAM_COLLABS = [
