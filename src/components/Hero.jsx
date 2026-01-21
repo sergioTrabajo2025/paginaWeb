@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { ExternalLink, Lock } from "lucide-react";
 
 const HERO_SECTIONS = [
@@ -15,7 +15,7 @@ const HERO_SECTIONS = [
     image: "/gallery/hero_mock.jpg",
     actions: [
       { label: "Linea LGR", href: "https://smb-lgr-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "Abrir en Mozilla Firefox" },
-      { label: "Linea LS", disabled: true, icon: Lock, variant: "ghost", title: "Proximamente" },
+      { label: "Linea LS", href: "https://smb-ls-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "Abrir en Mozilla Firefox" },
       { label: "LSM", disabled: true, icon: Lock, variant: "ghost", title: "Proximamente" },
       { label: "LM", disabled: true, icon: Lock, variant: "ghost", title: "Proximamente" },
       { label: "Linea LBS", href: "https://smb-lbs-sgs.netlify.app", icon: ExternalLink, variant: "outline", title: "Abrir en Mozilla Firefox" },
@@ -27,6 +27,7 @@ const HERO_SECTIONS = [
   },
   {
     id: "TMP",
+    
     title: "Sistema TMP",
     description:
       "Plataforma integral con tablero web en tiempo real, seguimiento de tareas, alertas y herramientas para optimizar la operacion y el mantenimiento de equipos e infraestructura.",
