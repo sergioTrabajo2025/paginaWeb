@@ -18,7 +18,7 @@ const HERO_SECTIONS = [
       { label: "Linea LS", href: "https://smb-ls-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "" },
       { label: "Linea LSM", href: "https://smb-lsm-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "" },
       { label: "Linea LM", href: "https://smb-lm-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "" },
-      { label: "Linea LBS", href: "https://smb-lbs-sgs.netlify.app", icon: ExternalLink, variant: "outline", title: "" },
+      { label: "Linea LBS", href: "https://smb-lbs-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "" },
     ],
     helper: {
       label: "Instructivo para la visualizacion de los links en Google Chrome",
