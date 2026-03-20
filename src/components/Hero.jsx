@@ -14,11 +14,11 @@ const HERO_SECTIONS = [
     ],
     image: "/gallery/hero_mock.jpg",
     actions: [
-      { label: "Linea LGR", href: "https://smb-lgr-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "Abrir en Mozilla Firefox" },
-      { label: "Linea LS", href: "https://smb-ls-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "Abrir en Mozilla Firefox" },
-      { label: "LSM", disabled: true, icon: Lock, variant: "ghost", title: "Proximamente" },
-      { label: "LM", disabled: true, icon: Lock, variant: "ghost", title: "Proximamente" },
-      { label: "Linea LBS", href: "https://smb-lbs-sgs.netlify.app", icon: ExternalLink, variant: "outline", title: "Abrir en Mozilla Firefox" },
+      { label: "Linea LGR", href: "https://smb-lgr-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "" },
+      { label: "Linea LS", href: "https://smb-ls-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "" },
+      { label: "Linea LSM", href: "https://smb-lsm-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "" },
+      { label: "Linea LM", href: "https://smb-lm-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "" },
+      { label: "Linea LBS", href: "https://smb-lbs-sgs.netlify.app", icon: ExternalLink, variant: "outline", title: "" },
     ],
     helper: {
       label: "Instructivo para la visualizacion de los links en Google Chrome",
