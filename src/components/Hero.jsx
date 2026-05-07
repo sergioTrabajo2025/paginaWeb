@@ -5,6 +5,7 @@ const HERO_SECTIONS = [
   {
     id: "SMB",
     title: "Sistema SMB",
+    status: "En prueba",
     description:
       "Plataforma de monitoreo y control para lineas ferroviarias, con modulos independientes y visualizacion web en tiempo real.",
     gradient: "from-indigo-500/10 via-cyan-500/10 to-fuchsia-500/10",
@@ -14,11 +15,11 @@ const HERO_SECTIONS = [
     ],
     image: "/gallery/hero_mock.jpg",
     actions: [
-      { label: "Linea LGR", href: "https://smb-lgr-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "" },
-      { label: "Linea LS", href: "https://smb-ls-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "" },
-      { label: "Linea LSM", href: "https://smb-lsm-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "" },
-      { label: "Linea LM", href: "https://smb-lm-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "" },
-      { label: "Linea LBS", href: "https://smb-lbs-sgs.netlify.app", icon: ExternalLink, variant: "solid", title: "" },
+      { label: "Linea LGR", href: "https://trenes2025.ddns.net:9080", icon: ExternalLink, variant: "solid", title: "Abrir LGR (Roca)" },
+      { label: "Linea LS", href: "https://trenes2025.ddns.net:9099", icon: ExternalLink, variant: "solid", title: "Abrir LS" },
+      { label: "Linea LBS", href: "https://trenes2025.ddns.net:9149", icon: ExternalLink, variant: "solid", title: "Abrir LBS" },
+      { label: "Linea LM", href: "https://trenes2025.ddns.net:9199", icon: ExternalLink, variant: "solid", title: "Abrir LM" },
+      { label: "Linea LSM", href: "https://trenes2025.ddns.net:9249", icon: ExternalLink, variant: "solid", title: "Abrir LSM" },
     ],
     helper: {
       label: "Instructivo para la visualizacion de los links en Google Chrome",
@@ -97,6 +98,12 @@ function HeroSection({ section }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
+            {section.status && (
+              <span className="mb-3 inline-flex rounded-full border border-amber-300/40 bg-amber-300/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-amber-100">
+                {section.status}
+              </span>
+            )}
+
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
               {section.title}
             </h1>
