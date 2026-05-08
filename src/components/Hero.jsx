@@ -15,7 +15,7 @@ const HERO_SECTIONS = [
     ],
     image: "/gallery/hero_mock.jpg",
     actions: [
-      { label: "Linea LGR", href: "https://trenes2025.ddns.net:9080", icon: ExternalLink, variant: "solid", title: "Abrir LGR (Roca)" },
+      { label: "Linea LGR", href: "https://trenes2025.ddns.net:9049", icon: ExternalLink, variant: "solid", title: "Abrir LGR (Roca)" },
       { label: "Linea LS", href: "https://trenes2025.ddns.net:9099", icon: ExternalLink, variant: "solid", title: "Abrir LS" },
       { label: "Linea LBS", href: "https://trenes2025.ddns.net:9149", icon: ExternalLink, variant: "solid", title: "Abrir LBS" },
       { label: "Linea LM", href: "https://trenes2025.ddns.net:9199", icon: ExternalLink, variant: "solid", title: "Abrir LM" },
