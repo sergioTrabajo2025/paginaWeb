@@ -39,7 +39,7 @@ const HERO_SECTIONS = [
     ],
     image: "/gallery/tmp interfaz.jpg",
     actions: [
-      { label: "Visualizacion", href: "https://trenes2025.ddns.net/", icon: ExternalLink, variant: "solid", title: "Abrir en navegador" },
+      { label: "Visualizacion", href: "https://trenes2025.ddns.net:8049/", icon: ExternalLink, variant: "solid", title: "Abrir en navegador" },
     ],
     helper: {
       label: "Instructivo para la visualizacion de los links en Google Chrome",
